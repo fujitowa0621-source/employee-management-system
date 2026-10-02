@@ -8,6 +8,10 @@
 
 ログイン → トップページ → 社員一覧／社員登録の流れで操作できます。
 
+## 本番環境
+
+https://awake-passion-production-f1db.up.railway.app
+
 ## テストアカウント
 
 - ID: `admin`
