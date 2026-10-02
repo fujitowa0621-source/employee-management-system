@@ -2,7 +2,7 @@ import React,{useEffect,useState}from'react';
 import{createRoot}from'react-dom/client';
 import{BrowserRouter,Routes,Route,Navigate,Link,useNavigate,useParams}from'react-router-dom';
 import'./style.css';
-const API='http://localhost:8080';
+const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
 async function api(path,opt={}){
  const r=await fetch(API+path,{credentials:'include',headers:{'Content-Type':'application/json'},...opt});
  let d={};try{d=await r.json()}catch{}
